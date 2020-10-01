@@ -101,7 +101,7 @@ do
 	TrimmomaticPE -threads 2 ${root_dir}/${raw_read_for} ${root_dir}/${raw_read_rev} \
 		${root_dir}/${raw_read_for%.*}_paired.fq ${root_dir}/${raw_read_for%.*}_unpaired.fq \
 			${root_dir}/${raw_read_rev%.*}_paired.fq ${root_dir}/${raw_read_rev%.*}_unpaired.fq \
-				ILLUMINACLIP:/home/jessica/TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36; 
+				ILLUMINACLIP:./TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36; 
 done
 
 echo "-----------Performing reference-guided alignment...-----------"
