@@ -145,7 +145,7 @@ done
 export root_dir
 ./read_info_formatted.sh 
 #sleep 30
-./jess_co_infchecked_formatted.sh
+./co_infchecked_formatted.sh
 
 wait
 
@@ -251,7 +251,8 @@ echo -e "-----------Calling SNPs...-----------"
 for sort_quasi_bam in *_quasi.sort.bam;
 do prefix=${sort_quasi_bam%-*};
 lofreq call -f ${root_dir}/${prefix}-_geneious_.sort_final_cns.fa -o ${sort_quasi_bam%.*}_raw30lofreq.vcf -q 30 -Q 30 ${sort_quasi_bam} --verbose;
-bcftools filter -i '(100) < (DP4[0]+DP4[1]+DP4[2]+DP4[3]) & (AF) >= (0.01)' ${sort_quasi_bam%.*}_raw30lofreq.vcf >${prefix}_100_lofreq.vcf;
+#option to choose read and variant allele frequency minimum:
+#bcftools filter -i '(100) < (DP4[0]+DP4[1]+DP4[2]+DP4[3]) & (AF) >= (0.01)' ${sort_quasi_bam%.*}_raw30lofreq.vcf >${prefix}_100_lofreq.vcf;
 bcftools filter -i '(500) < (DP4[0]+DP4[1]+DP4[2]+DP4[3]) & (AF) >= (0.01)' ${sort_quasi_bam%.*}_raw30lofreq.vcf >${prefix}_500_lofreq.vcf
 done
 ##
@@ -394,7 +395,8 @@ do
 	done; 
 done
 
-############for bicistronic segment..need to run for other orf on same segment, but will overwrite existing..so will rename first##################
+############for bicistronic segment..need to run for other orf on same segment, but will overwrite existing..so will rename first file.
+##this will need to be edited depending on name of your polycistronic segment##################
 for bicistronic in ${snp_gen_dir}/all_pi_results/*NC_036472.1*;
 do
 	mv ${bicistronic} ${bicistronic/NC_036472.1/NC_036472.1a}
