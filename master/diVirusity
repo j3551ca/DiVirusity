@@ -10,7 +10,7 @@
 #set -e
 
 echo -e "\n	 -----------------------
-	    Welcome to NextGenDiVirus
+	    Welcome to DiVirusity
 	 -----------------------\n"
 
 #Instead of specifying working directory..mv files into same directory as script..then can change to shannon div sub-folder and ntdiv-folder more easily (less chance for error)
