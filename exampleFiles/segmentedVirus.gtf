@@ -1,0 +1,13 @@
+#seq_name\tsource\tfeature\tstart\tstop\tscore\tstrand\tattribute\tattr_name
+NC_036476.1	NCBI  CDS	19	3867	.	+	0	gene_id "L1";
+NC_036468.1	NCBI	CDS	19	3891	.	+	0	gene_id "L2";
+NC_036477.1	NCBI	CDS	8	3868	.	+	0	gene_id "L3";
+NC_036469.1	NCBI	CDS	22	2304	.	+	0	gene_id "M1";
+NC_036470.1	NCBI	CDS	27	2090	.	+	0	gene_id "M2";
+NC_036471.1	NCBI	CDS	84	2342	.	+	0	gene_id "M3";
+NC_036472.1	NCBI	CDS	29	1021	.	+	0	gene_id "S1";
+NC_036473.1	NCBI	CDS	22	1284	.	+	0	gene_id "S2";
+NC_036474.1	NCBI	CDS	29	1093	.	+	0	gene_id "S3";
+NC_036475.1	NCBI	CDS	39	986	.	+	0	gene_id "S4";
+
+
