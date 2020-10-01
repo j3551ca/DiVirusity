@@ -77,15 +77,15 @@ fi
 
 #make sra fastq files compatible with rest of downstream analysis. Above line searches for given patterns. If non-sra-derived reads are named similarly, they 
 #will simply be renamed. Redundant, but not fatal to program. 
-# sra_fastq=(${root_dir}/*_1.fastq)
+# # sra_fastq=(${root_dir}/*_R1.fastq)
 #
 # if [[ ${#sra_fastq[@]} -ge 1 ]];
 # then
 # for file_for in ${sra_fastq[@]};
 # 	do
-# 		file_rev=${file_for/_1/_2};
-# 		mv ${file_for} ${file_for/_1/_L001_R1_001};
-# 		mv ${file_rev} ${file_rev/_2/_L001_R2_001};
+# 		file_rev=${file_for/_R1/_R2};
+# 		mv ${file_for} ${file_for/_R1/_L001_R1_001};
+# 		mv ${file_rev} ${file_rev/_R2/_L001_R2_001};
 # 	done
 # fi
 
