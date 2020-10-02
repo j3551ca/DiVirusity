@@ -9,4 +9,4 @@ Input: fasta reference genome (.fasta), fastq raw sequence reads (_R1.fastq, _R2
 
 Useage: run in this folder (./DiVirusity/master) with raw sequencing data fastq files, reference genome, and gtf file as: ./diVirusity.sh reference gtf BQ MQ
 
-Output: 3 different diversity statistics for each position in the open reading frames of the virus. 
+Output: text files. 3 different diversity statistics for each position in the open reading frames of the virus. 
