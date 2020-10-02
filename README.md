@@ -11,4 +11,4 @@ Useage: run in this folder (./DiVirusity/master) with raw sequencing data fastq 
 
 Output: text files. 3 different diversity statistics for each position in the open reading frames of the virus. 
 
-![https://github.com/j3551ca/DiVirusity/blob/main/divirusity.pdf]
+![divirusity.pdf](https://github.com/j3551ca/DiVirusity/blob/main/divirusity.pdf)
